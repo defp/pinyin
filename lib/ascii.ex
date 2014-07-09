@@ -26,6 +26,11 @@ defmodule Ascii do
       String.contains? pinyin, "ǚ" -> String.replace(pinyin, "ǚ", "v")
       String.contains? pinyin, "ǜ" -> String.replace(pinyin, "ǜ", "v")
 
+      String.contains? pinyin, "ū" -> String.replace(pinyin, "ū", "v")
+      String.contains? pinyin, "ú" -> String.replace(pinyin, "ú", "v")
+      String.contains? pinyin, "ǔ" -> String.replace(pinyin, "ǔ", "v")
+      String.contains? pinyin, "ù" -> String.replace(pinyin, "ù", "v")
+
       String.contains? pinyin, "üē" -> String.replace(pinyin, "üē", "ue")
       String.contains? pinyin, "üé" -> String.replace(pinyin, "üé", "ue")
       String.contains? pinyin, "üě" -> String.replace(pinyin, "üě", "ue")
@@ -61,6 +66,11 @@ defmodule Ascii do
       String.contains? pinyin, "ǘ" -> String.replace(pinyin, "ǘ", "v")  <> "2"
       String.contains? pinyin, "ǚ" -> String.replace(pinyin, "ǚ", "v")  <> "3"
       String.contains? pinyin, "ǜ" -> String.replace(pinyin, "ǜ", "v")  <> "4"
+
+      String.contains? pinyin, "ū" -> String.replace(pinyin, "ū", "v")  <> "1"
+      String.contains? pinyin, "ú" -> String.replace(pinyin, "ú", "v")  <> "2"
+      String.contains? pinyin, "ǔ" -> String.replace(pinyin, "ǔ", "v")  <> "3"
+      String.contains? pinyin, "ù" -> String.replace(pinyin, "ù", "v")  <> "4"
 
       String.contains? pinyin, "üē" -> String.replace(pinyin, "üē", "ue") <> "1"
       String.contains? pinyin, "üé" -> String.replace(pinyin, "üé", "ue") <> "2"
