@@ -3,28 +3,29 @@ defmodule Pinyin.Mixfile do
 
   def project do
     [app: :pinyin,
-     version: "0.0.1",
+     version: "0.1.1",
      elixir: "~> 0.14.3-dev",
-     deps: deps]
+     deps: deps,
+     description: description,
+     source_url: "https://github.com/lidashuang/pinyin",
+     package: package ]
   end
 
-  # Configuration for the OTP application
-  #
-  # Type `mix help compile.app` for more information
   def application do
     [applications: []]
   end
 
-  # Dependencies can be hex.pm packages:
-  #
-  #   {:mydep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1"}
-  #
-  # Type `mix help deps` for more examples and options
+  defp description do
+    "SSDB client for Elixir"
+  end
+
   defp deps do
     []
+  end
+
+  defp package do
+    [contributors: ["lidashuang"],
+     licenses: ["Apache 2.0"],
+     links: %{"Github" => "https://github.com/lidashuang/pinyin"}]
   end
 end
