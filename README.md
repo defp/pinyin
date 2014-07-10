@@ -1,7 +1,9 @@
-Pinyin
-======
+Pinyin for Elixir
+=========================
 
-Example:
+简单的汉字转拼音工具 
+
+## Example:
 
 ```iex
 iex(40)> Pinyin.pinyin "Elixir编程语言"
@@ -14,8 +16,9 @@ iex(43)> Pinyin.permlink "Elixir编程语言"
 "Elixir-bian-cheng-yv-yan"
 iex(44)>
 ```
+## thanks
 
-** TODO **
-* add documents
-* add function spec
-* parse ,.! and so on
+The pinyin data library from ruby-pinyin project:
+
+https://github.com/janx/ruby-pinyin
+
