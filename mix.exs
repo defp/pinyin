@@ -3,7 +3,7 @@ defmodule Pinyin.Mixfile do
 
   def project do
     [app: :pinyin,
-     version: "0.1.1",
+     version: "0.1.2",
      elixir: "~> 0.14.3-dev",
      deps: deps,
      description: description,
@@ -16,7 +16,7 @@ defmodule Pinyin.Mixfile do
   end
 
   defp description do
-    "SSDB client for Elixir"
+    "chinaese pinyin library"
   end
 
   defp deps do
