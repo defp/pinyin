@@ -3,8 +3,8 @@ defmodule Pinyin.Mixfile do
 
   def project do
     [app: :pinyin,
-     version: "0.1.3",
-     elixir: "~> 0.14.4-dev",
+     version: "0.1.4",
+     elixir: "~> 1.0",
      deps: deps,
      description: description,
      source_url: "https://github.com/lidashuang/pinyin",
