@@ -16,7 +16,7 @@ defmodule Pinyin.Mixfile do
   end
 
   defp description do
-    "chinaese pinyin library"
+    "chinese pinyin library"
   end
 
   defp deps do
