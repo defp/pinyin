@@ -29,8 +29,8 @@ defmodule Pinyin do
   def pinyin(han) do
     Enum.map(parse_codepoints(han), fn(ch) ->
       if String.length(ch) == 1 do
-        << codepoint :: utf8 >> = ch
-        get_pinyin(codepoint)
+        << int_val :: utf8 >> = ch
+        get_pinyin(int_val)
       else
         ch
       end
@@ -53,6 +53,6 @@ defmodule Pinyin do
   def permlink(han, sep \\ "-") do
     pinyin(han)
     |> Enum.map(fn(ch) -> pinyin_to_ascii(ch) end)
-    |> Enum.join sep
+    |> Enum.join(sep)
   end
 end
