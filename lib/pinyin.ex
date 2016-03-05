@@ -40,19 +40,20 @@ defmodule Pinyin do
   @spec letter_with_tone(binary) :: [binary]
   def letter_with_tone(han) do
     pinyin(han) |>
-    Enum.map(fn(ch) -> pinyin_to_ascii_with_tone(ch) end)
+    Enum.map(fn(ch) -> pinyin_to_ascii(ch, true) end)
   end
 
   @spec letter(binary) :: [binary]
   def letter(han) do
     pinyin(han) |>
-    Enum.map(fn(ch) -> pinyin_to_ascii(ch) end)
+    Enum.map(fn(ch) -> pinyin_to_ascii(ch, false) end)
   end
 
   @spec permlink(binary) :: binary
   def permlink(han, sep \\ "-") do
     pinyin(han)
-    |> Enum.map(fn(ch) -> pinyin_to_ascii(ch) end)
+    |> Enum.map(fn(ch) -> pinyin_to_ascii(ch, false) end)
     |> Enum.join(sep)
   end
+
 end

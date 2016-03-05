@@ -9,11 +9,11 @@ Pinyin for Elixir
 iex(40)> Pinyin.pinyin "Elixir编程语言"
 ["Elixir", "biān", "chéng", "yǔ", "yán"]
 iex(41)> Pinyin.letter "Elixir编程语言"
-["Elixir", "bian", "cheng", "yv", "yan"]
+["Elixir", "bian", "cheng", "yu", "yan"]
 iex(42)> Pinyin.letter_with_tone "Elixir编程语言"
-["Elixir", "bian1", "cheng2", "yv3", "yan2"]
+["Elixir", "bian1", "cheng2", "yu3", "yan2"]
 iex(43)> Pinyin.permlink "Elixir编程语言"
-"Elixir-bian-cheng-yv-yan"
+"Elixir-bian-cheng-yu-yan"
 iex(44)>
 ```
 ## thanks
