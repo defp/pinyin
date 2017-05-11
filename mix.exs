@@ -5,10 +5,10 @@ defmodule Pinyin.Mixfile do
     [app: :pinyin,
      version: "0.1.4",
      elixir: "~> 1.0",
-     deps: deps,
-     description: description,
+     deps: deps(),
+     description: description(),
      source_url: "https://github.com/lidashuang/pinyin",
-     package: package ]
+     package: package() ]
   end
 
   def application do
