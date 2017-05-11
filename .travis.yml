@@ -1,0 +1,8 @@
+language: elixir
+elixir: 1.4.2
+env: MIX_ENV=test
+notifications:
+  recipients:
+    - ldshuang@gmail.com
+otp_release:
+  - 19.3
